@@ -6,3 +6,4 @@ plotly
 json
 scipy
 gunicorn
+dash-bootstrap-components
