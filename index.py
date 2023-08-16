@@ -33,6 +33,3 @@ def display_page(pathname):
     else:
         return home.layout
 
-# Run the app on localhost:8050
-if __name__ == '__main__':
-    app.run_server(debug=True)
