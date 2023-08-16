@@ -1,0 +1,41 @@
+
+body {
+    color: #f0f8ff;
+    background-color: #111111;
+    font-family: 'Courier', monospace;
+}
+button {
+    font-family: 'Courier', monospace;
+}
+
+.body-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;  /* Adjust this for the gap between rows in a body input set */
+    margin-bottom: 10px;  /* Adjust this for the gap between different bodies */
+}
+
+.body-inputs > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;  /* Reduce this to make fields closer together */
+}
+
+.spaced-label {
+    margin-right: 5px;  /* Adjust the value as needed */
+}
+
+button {
+    color: aliceblue;
+    background-color: #141f24;
+}
+
+input:focus {
+    background-color: aliceblue;
+    border-color: #2e3031; /* change border color on focus */
+    outline: none; /* remove browser default outline */
+    box-shadow: 0 0 5px rgba(27, 28, 29, 0.5); /* subtle glow */
+}
+
+
