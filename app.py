@@ -18,6 +18,8 @@ app = dash.Dash(__name__,
                 meta_tags=[{"name": "viewport", "content": "width=device-width"}],
                 suppress_callback_exceptions=True)
 
+server = app.server
+
 # define the navbar
 nav = navbar.Navbar()
 
@@ -39,8 +41,3 @@ def display_page(pathname):
         return page3.layout
     else:
         return home.layout
-
-# Run the app on localhost:8050
-if __name__ == '__main__':
-    app.run_server(debug=True)
-
