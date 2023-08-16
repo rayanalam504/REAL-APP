@@ -41,3 +41,6 @@ def display_page(pathname):
         return page3.layout
     else:
         return home.layout
+
+if __name__ == '__main__':
+    app.run_server(debug=False)
