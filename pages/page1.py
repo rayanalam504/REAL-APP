@@ -16,10 +16,10 @@ import json
 #         return json.load(f)
 
 # Load each of the JSON files
-infinity_data = load_json('infinity.json')
-yinyang_data = load_json('yinyang.json')
-freefall_data = load_json('freefall.json')
-uneqmass_data = load_json('uneqmass.json')
+# infinity_data = load_json('infinity.json')
+# yinyang_data = load_json('yinyang.json')
+# freefall_data = load_json('freefall.json')
+# uneqmass_data = load_json('uneqmass.json')
 
 
 def compute(initial_data, mass):
