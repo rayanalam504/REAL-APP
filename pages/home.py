@@ -7,6 +7,8 @@ layout = html.Div(
     html.Br(),
     html.Label('This gives viewers the chance to examine our simulations in more detail and showcases our extension into n-body dynamics. '),
     html.Br(),
-    html.Label('You can view preset stable configurations (or input your own...) and create chaotic ones'),
+    html.Label('You can view preset stable configurations (or input your own...) and create chaotic ones.'),
+    html.Br(),
+    html.LabeL('Drag the cursor to zoom, double click to zoom out.')
     ]
 )
