@@ -8,7 +8,18 @@ from scipy.integrate import solve_ivp
 import pandas as pd
 import plotly.io as pio
 import json
-# import dash_bootstrap_components as dbc
+
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# def load_json(filename):
+#     with open(os.path.join(BASE_DIR, 'data', filename), 'r') as f:
+#         return json.load(f)
+
+# Load each of the JSON files
+infinity_data = load_json('infinity.json')
+yinyang_data = load_json('yinyang.json')
+freefall_data = load_json('freefall.json')
+uneqmass_data = load_json('uneqmass.json')
 
 
 def compute(initial_data, mass):
