@@ -9,6 +9,6 @@ layout = html.Div(
     html.Br(),
     html.Label('You can view preset stable configurations (or input your own...) and create chaotic ones.'),
     html.Br(),
-    html.LabeL('Drag the cursor to zoom, double click to zoom out.')
+    html.Label('Drag the cursor to zoom, double click to zoom out.')
     ]
 )
