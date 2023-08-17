@@ -282,10 +282,11 @@ def submit_data(f_clicks, x_values, y_values, vx_values, vy_values, mass_values)
             [0.43236573, 0.43236573, -0.86473146]
         ], 
       [1,1,1]
-    ]:
-        with open(r'infinity.json') as file:
-            temp = json.load(file)
-        fig = adjust(go.Figure(temp))
+    # ]:
+    #     with open(r'infinity.json') as file:
+    #         temp = json.load(file)
+    #     fig = adjust(go.Figure(temp))
+        fig = plot(data,mass)
         return "Data submitted successfully!", None, None, dcc.Graph(figure=fig)
     
     elif [data,mass] == [
@@ -296,10 +297,11 @@ def submit_data(f_clicks, x_values, y_values, vx_values, vy_values, mass_values)
                 [0.304736, 0.304736, -0.609472]
             ],
         [1,1,1]
-    ]:
-        with open(r'C:\Users\User\REAL APP\data\yinyang.json') as file:
-            temp = json.load(file)
-        fig = adjust(go.Figure(temp))
+    # ]:
+    #     with open(r'C:\Users\User\REAL APP\data\yinyang.json') as file:
+    #         temp = json.load(file)
+    #     fig = adjust(go.Figure(temp))
+        fig = plot(data,mass)
         return "Data submitted successfully!", None, None, dcc.Graph(figure=fig)
     
     elif [data,mass] == [
@@ -310,10 +312,11 @@ def submit_data(f_clicks, x_values, y_values, vx_values, vy_values, mass_values)
                 [0, 0, 0]
             ],
         [1,1,1]
-    ]:
-        with open(r'C:\Users\User\REAL APP\data\freefall.json') as file:
-            temp = json.load(file)
-        fig = adjust(go.Figure(temp))
+    # ]:
+    #     with open(r'C:\Users\User\REAL APP\data\freefall.json') as file:
+    #         temp = json.load(file)
+    #     fig = adjust(go.Figure(temp))
+        fig = plot(data,mass)
         return "Data submitted successfully!", None, None, dcc.Graph(figure=fig)
     
     elif [data,mass] == [
@@ -324,10 +327,11 @@ def submit_data(f_clicks, x_values, y_values, vx_values, vy_values, mass_values)
                 [0.2536896353, 0.2536896353, -1.0147585412]
             ],
         [1,1,0.5]
-    ]:
-        with open(r'uneqmass.json') as file:
-            temp = json.load(file)
-        fig = adjust(go.Figure(temp))
+    # ]:
+    #     with open(r'uneqmass.json') as file:
+    #         temp = json.load(file)
+    #     fig = adjust(go.Figure(temp))
+        fig = plot(data,mass)
         return "Data submitted successfully!", None, None, dcc.Graph(figure=fig)     
     else:
         fig = plot(data,mass)
