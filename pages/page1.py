@@ -7,8 +7,20 @@ import numpy as np
 from scipy.integrate import solve_ivp
 import pandas as pd
 import plotly.io as pio
+import os
 import json
-# import dash_bootstrap_components as dbc
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def load_json(filename):
+    with open(os.path.join(BASE_DIR, 'data', filename), 'r') as f:
+        return json.load(f)
+
+# Load each of the JSON files
+infinity_data = load_json('infinity.json')
+yinyang_data = load_json('yinyang.json')
+freefall_data = load_json('freefall.json')
+uneqmass_data = load_json('uneqmass.json')
 
 
 def compute(initial_data, mass):
@@ -300,9 +312,10 @@ def submit_data(f_clicks, x_values, y_values, vx_values, vy_values, mass_values)
             ],
         [1,1,1]
     ]:
-        with open(r'C:\Users\User\REAL APP\data\freefall.json') as file:
-            temp = json.load(file)
-        fig = adjust(go.Figure(temp))
+        # with open(r'C:\Users\User\REAL APP\data\freefall.json') as file:
+        #     temp = json.load(file)
+        # fig = adjust(go.Figure(temp))
+        fig = load_figure_from_json('freefall.json')
         return "Data submitted successfully!", None, None, dcc.Graph(figure=fig)
     
     elif [data,mass] == [
