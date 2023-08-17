@@ -7,7 +7,6 @@ import numpy as np
 from scipy.integrate import solve_ivp
 import pandas as pd
 import plotly.io as pio
-import os
 import json
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
