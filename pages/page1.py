@@ -283,7 +283,7 @@ def submit_data(f_clicks, x_values, y_values, vx_values, vy_values, mass_values)
         ], 
       [1,1,1]
     ]:
-        with open(r'C:\Users\User\REAL APP\data\infinity.json') as file:
+        with open(r'infinity.json') as file:
             temp = json.load(file)
         fig = adjust(go.Figure(temp))
         return "Data submitted successfully!", None, None, dcc.Graph(figure=fig)
